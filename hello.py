@@ -22,7 +22,7 @@ table(df)
 
 from preswald import slider
 
-# Add a slider to filter by Happiness Score
+# Adding a slider to filter by Happiness Score
 threshold = slider("Happiness Score Threshold", min_val=0, max_val=10, default=6)
 table(df[df['Happiness Score'] > threshold], title="Countries Above Happiness Threshold")
 
